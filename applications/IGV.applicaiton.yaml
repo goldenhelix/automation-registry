@@ -1,0 +1,44 @@
+name: IGV
+description: View .bam, .bed and .vcf files
+icon_path: images/igv.png
+
+agent_requirements:
+  cpu_cores: 2
+  memory_gb: 4
+
+parameters:
+  - name: IGV_FILE
+    label: IGV File
+    type: file
+    optional: true
+    pattern_match:
+      - '*.bam'
+      - '*.bed'
+      - '*.vcf'
+
+  - name: IDLE_TIMEOUT
+    label: Idle Auto Shutdown
+    help: If the user does not interact with the application for this amount of time, it will shut down.
+    type: enum
+    value: "28800"
+    choices:
+      "<1800>: Shutdown after idle for 30 minutes"
+      "<3600>: Shutdown after idle for 1 hour"
+      "<7200>: Shutdown after idle for 2 hours"
+      "<14400>: Shutdown after idle for 4 hours"
+      "<28800>: Shutdown after idle for 8 hours"
+      "<86400>: Shutdown after idle for 24 hours"
+      "<864000>: Shutdown after idle for 10 days"
+      "<>: Do not shutdown"
+
+application:
+  docker:
+    image: registry.goldenhelix.com/public/ghdesktop-igv:2.16.0
+    workspace_mount: /home/ghuser/Workspace/
+    shared_memory_size: 1g
+    env:
+      VNC_PW: ${APPLICATION_PASSWORD}
+      NO_VNC_PORT: ${APPLICATION_PORT}
+      APP_ARGS: '"${IGV_FILE}"'
+      MAXIMIZE: 'true'
+      MONITOR_PROCESS: '1'

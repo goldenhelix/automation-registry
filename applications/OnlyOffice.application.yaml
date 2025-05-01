@@ -1,0 +1,59 @@
+name: OnlyOffice
+description: Open and edit .docx, .pptx and .xlsx files
+icon_path: images/onlyoffice.svg
+
+agent_requirements:
+  cpu_cores: 2
+  memory_gb: 2
+
+parameters:
+  - name: office_file
+    label: Office File
+    type: file
+    optional: true
+    pattern_match:
+      - '*.docx'
+      - '*.pptx'
+      - '*.xlsx'
+      - '*.doc'
+      - '*.pdf'
+      - '*.txt'
+      - '*.rtf'
+      - '*.odt'
+      - '*.ods'
+      - '*.odp'
+      - '*.xls'
+      - '*.ppt'
+      - '*.csv'
+
+  - name: IDLE_TIMEOUT
+    label: Idle Auto Shutdown
+    help: If the user does not interact with the application for this amount of time, the application will be automatically shut down.
+    type: enum
+    value: "28800"
+    choices:
+      - "<1800>: Shutdown after idle for 30 minutes"
+      - "<3600>: Shutdown after idle for 1 hour"
+      - "<7200>: Shutdown after idle for 2 hours"
+      - "<14400>: Shutdown after idle for 4 hours"
+      - "<28800>: Shutdown after idle for 8 hours"
+      - "<86400>: Shutdown after idle for 24 hours"
+      - "<864000>: Shutdown after idle for 10 days"
+      - "<>: Do not shutdown"
+
+  - name: dark_mode
+    label: Enable Dark Mode
+    type: boolean
+    value: "$DARK_MODE_PREFERENCE"
+
+application:
+  docker:
+    image: registry.goldenhelix.com/public/ghdesktop-onlyoffice:8.2.2
+    workspace_mount: /home/ghuser/Workspace/
+    shared_memory_size: 1g
+  env:
+    VNC_PW: ${APPLICATION_PASSWORD}
+    NO_VNC_PORT: ${APPLICATION_PORT}
+    APP_ARGS: '"${office_file}"'
+    MAXIMIZE: 'true'
+    MONITOR_PROCESS: '1'

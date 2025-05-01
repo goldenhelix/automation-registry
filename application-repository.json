@@ -1,0 +1,29 @@
+{
+    "manifestVersion": "1.0",
+    "lastUpdated": "2025-04-09",
+    "workflows": [
+      {
+        "name": "IGV",
+        "version": "2.16.0",
+        "description": "A high-performance, interactive tool for visual exploration of genomic data, supporting integration of various data types from local or cloud sources",
+        "applicationYamlUrl": "applications/IGV.application.yaml",
+        "iconUrl": "images/igv.png",
+        "websiteUrl": "https://igv.org/doc/desktop/",
+        "tags": ["Visualization", "BAM", "VCF"]
+      },
+      {
+        "name": "OnlyOffice",
+        "version": "8.2.2",
+        "description": "A free, open-source office suite offering comprehensive tools for creating, editing, and collaborating on documents, spreadsheets, presentations, forms, and PDFs",
+        "applicationYamlUrl": "applications/OnlyOffice.application.yaml",
+        "iconUrl": "images/onlyoffice.svg",
+        "websiteUrl": "https://www.onlyoffice.com/",
+        "tags": ["Office Suite", "DOCX", "PDF"]
+      }
+    ],
+    "metadata": {
+      "repository": "Application Repository",
+      "organization": "Golden Helix",
+      "contact": "support@goldenhelix.com"
+    }
+  }

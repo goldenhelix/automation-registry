@@ -26,6 +26,15 @@ The repository contains:
   - Last updated timestamp
   - Organization and contact information
 
+- `application-repository.json` - Central manifest file containing metadata about available applications including:
+  - Application name and version
+  - Description
+  - Application YAML configuration URL
+  - Icon URL
+  - Website URL
+  - Application tags
+  - Repository metadata (organization, contact)
+
 - Individual workflow repositories referenced in the manifest, each containing:
   - Workflow definition files
   - Documentation
