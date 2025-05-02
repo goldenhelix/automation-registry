@@ -6,6 +6,9 @@ This repository serves as a catalog for workflows, tasks, and applications that 
 
 This registry contains a collection of pre-configured workflows and applications designed to work with Golden Helix's genomic analysis platform. These components can be imported into your Golden Helix server to extend its functionality and automate various genomic analysis tasks.
 
+- **Workflows**: Can be imported via Workflows > Actions > Add Workflow from Repository in the VSWarehouse interface.
+- **Applications**: Can be imported via Applications > Actions > Add Application from Repository in the VSWarehouse interface.
+
 ## About Golden Helix
 
 Golden Helix provides powerful genomic analysis software solutions, with VarSeq being their flagship product for variant analysis and interpretation. For more information about Golden Helix and their products, visit:
@@ -15,9 +18,7 @@ Golden Helix provides powerful genomic analysis software solutions, with VarSeq 
 
 ## Repository Structure
 
-The repository is organized around a central `workflow-repository.json` file that contains metadata for workflows available through the Golden Helix VSWarehouse server. This file is accessed when adding workflows via Workflows > Actions > Add Workflow from Repository in the VSWarehouse interface.
-
-The repository contains:
+The repository is organized around two central manifest files that contain metadata for components available through the Golden Helix server:
 
 - `workflow-repository.json` - Central manifest file containing metadata about available workflows including:
   - Name and description
