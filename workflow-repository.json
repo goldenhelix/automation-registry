@@ -1,6 +1,6 @@
 {
   "manifestVersion": "1.0",
-  "lastUpdated": "2025-04-09",
+  "lastUpdated": "2025-05-08",
   "workflows": [
     {
       "name": "Sentieon Short Reads",
@@ -27,12 +27,52 @@
       ]
     },
     {
-      "name": "GAUtil Variant Cohorts",
-      "description": "Cohort population frequence tracks using gautil",
+      "name": "Cohort Allele Frequency",
+      "description": "Cohort population frequencies tracks computation from VCFs using gautil",
       "gitUrl": "https://github.com/goldenhelix/cohort-analysis",
       "tags": [
         "Variant Frequency",
-        "Cohort Analysis"
+        "Cohort"
+      ]
+    },
+    {
+      "name": "BaseSpace Integration",
+      "description": "Download tasks for Illumina BaseSpace for the Golden Helix Server",
+      "gitUrl": "https://github.com/goldenhelix/basespace-integraton",
+      "tags": [
+        "Download",
+        "Illumina",
+        "BaseSpace"
+      ]
+    },
+    {
+      "name": "Archer Integration",
+      "description": "Integration workflow and tasks for Archer Analysis Server for Golden Helix Server",
+      "gitUrl": "https://github.com/goldenhelix/archer-integraton",
+      "tags": [
+        "Download",
+        "Archer",
+        "Analysis Server"
+      ]
+    },
+    {
+      "name": "Azure Blob Storage Download",
+      "description": "Bulk download and transfer capabilities for Azure Blob Storage",
+      "gitUrl": "https://github.com/goldenhelix/azure-blob-download",
+      "tags": [
+        "Download",
+        "Cloud Storage",
+        "Azure"
+      ]
+    },
+    {
+      "name": "Amazon S3 Download",
+      "description": "Bulk download and transfer capabilities for Amazon S3",
+      "gitUrl": "https://github.com/goldenhelix/s3-download",
+      "tags": [
+        "Download",
+        "Cloud Storage",
+        "AWS"
       ]
     }
   ],
