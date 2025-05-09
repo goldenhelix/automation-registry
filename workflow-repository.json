@@ -1,23 +1,44 @@
 {
-    "manifestVersion": "1.0",
-    "lastUpdated": "2025-04-09",
-    "workflows": [
-      {
-        "name": "Sentieon Short Reads",
-        "description": "Sentieon short-read pipelines with BWA-MEM, DNAscope and TNScope",
-        "gitUrl": "https://github.com/goldenhelix/sentieon-short-reads",
-        "tags": ["Germline", "Somatic", "Alignment", "Variant Calling", "Short Reads"]
-      },
-      {
-        "name": "Sentieon Long Reads",
-        "description": "Sentieon long-read pipelines with BWA-MEM, DNAscope and TNScope",
-        "gitUrl": "https://github.com/goldenhelix/sentieon-long-reads",
-        "tags": ["Germline", "Somatic", "Alignment", "Variant Calling", "Long Reads"]
-      }
-    ],
-    "metadata": {
-      "repository": "Workflow Repository",
-      "organization": "Golden Helix",
-      "contact": "support@goldenhelix.com"
+  "manifestVersion": "1.0",
+  "lastUpdated": "2025-04-09",
+  "workflows": [
+    {
+      "name": "Sentieon Short Reads",
+      "description": "Sentieon short-read pipelines with BWA-MEM, DNAscope and TNScope",
+      "gitUrl": "https://github.com/goldenhelix/sentieon-short-reads",
+      "tags": [
+        "Germline",
+        "Somatic",
+        "Alignment",
+        "Variant Calling",
+        "Short Reads"
+      ]
+    },
+    {
+      "name": "Sentieon Long Reads",
+      "description": "Sentieon long-read pipelines with BWA-MEM, DNAscope and TNScope",
+      "gitUrl": "https://github.com/goldenhelix/sentieon-long-reads",
+      "tags": [
+        "Germline",
+        "Somatic",
+        "Alignment",
+        "Variant Calling",
+        "Long Reads"
+      ]
+    },
+    {
+      "name": "GAUtil Variant Cohorts",
+      "description": "Cohort population frequence tracks using gautil",
+      "gitUrl": "https://github.com/goldenhelix/cohort-analysis",
+      "tags": [
+        "Variant Frequence",
+        "Cohort Analysis"
+      ]
     }
+  ],
+  "metadata": {
+    "repository": "Workflow Repository",
+    "organization": "Golden Helix",
+    "contact": "support@goldenhelix.com"
   }
+}
