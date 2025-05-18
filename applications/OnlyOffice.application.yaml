@@ -48,7 +48,7 @@ parameters:
 
 application:
   docker:
-    image: registry.goldenhelix.com/public/ghdesktop-onlyoffice:8.2.2
+    image: registry.goldenhelix.com/public/ghdesktop-onlyoffice:8.3.3
     workspace_mount: /home/ghuser/Workspace/
     shared_memory_size: 1g
   env:

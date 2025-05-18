@@ -13,7 +13,7 @@
       },
       {
         "name": "OnlyOffice",
-        "version": "8.2.2",
+        "version": "8.3.3",
         "description": "A free, open-source office suite offering comprehensive tools for creating, editing, and collaborating on documents, spreadsheets, presentations, forms, and PDFs",
         "applicationYamlUrl": "applications/OnlyOffice.application.yaml",
         "iconUrl": "images/onlyoffice.svg",
