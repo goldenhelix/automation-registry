@@ -7,10 +7,8 @@
       "description": "Sentieon short-read pipelines with BWA-MEM, DNAscope and TNScope",
       "gitUrl": "https://github.com/goldenhelix/sentieon-short-reads",
       "tags": [
-        "Germline",
-        "Somatic",
-        "Alignment",
-        "Variant Calling",
+        "Secondary Analysis",
+        "Sentieon",
         "Short Reads"
       ]
     },
@@ -19,10 +17,8 @@
       "description": "Sentieon long-read pipelines with BWA-MEM, DNAscope and TNScope",
       "gitUrl": "https://github.com/goldenhelix/sentieon-long-reads",
       "tags": [
-        "Germline",
-        "Somatic",
-        "Alignment",
-        "Variant Calling",
+        "Secondary Analysis",
+        "Sentieon",
         "Long Reads"
       ]
     },
@@ -31,8 +27,7 @@
       "description": "Cohort population frequencies tracks computation from VCFs using gautil",
       "gitUrl": "https://github.com/goldenhelix/cohort-analysis",
       "tags": [
-        "Variant Frequency",
-        "Cohort"
+        "Cohort Analysis"
       ]
     },
     {
@@ -40,9 +35,8 @@
       "description": "Download tasks for Illumina BaseSpace for the Golden Helix Server",
       "gitUrl": "https://github.com/goldenhelix/basespace-integraton",
       "tags": [
-        "Download",
-        "Illumina",
-        "BaseSpace"
+        "Data Transfer",
+        "Platform Integration"
       ]
     },
     {
@@ -50,9 +44,8 @@
       "description": "Integration workflow and tasks for Archer Analysis Server for Golden Helix Server",
       "gitUrl": "https://github.com/goldenhelix/archer-integraton",
       "tags": [
-        "Download",
-        "Archer",
-        "Analysis Server"
+        "Data Transfer",
+        "Platform Integration"
       ]
     },
     {
@@ -60,9 +53,8 @@
       "description": "Bulk download and transfer capabilities for Azure Blob Storage",
       "gitUrl": "https://github.com/goldenhelix/azure-blob-download",
       "tags": [
-        "Download",
-        "Cloud Storage",
-        "Azure"
+        "Data Transfer",
+        "Cloud Storage"
       ]
     },
     {
@@ -70,9 +62,17 @@
       "description": "Bulk download and transfer capabilities for Amazon S3",
       "gitUrl": "https://github.com/goldenhelix/s3-download",
       "tags": [
-        "Download",
-        "Cloud Storage",
-        "AWS"
+        "Data Transfer",
+        "Cloud Storage"
+      ]
+    },
+    {
+      "name": "DNAnexus Integration",
+      "description": "Golden Helix server tasks for automating file uploads and downloads with DNAnexus",
+      "gitUrl": "https://github.com/goldenhelix/dnanexus-integration",
+      "tags": [
+        "Data Transfer",
+        "Cloud Storage"
       ]
     }
   ],
