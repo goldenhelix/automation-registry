@@ -49,6 +49,15 @@
       ]
     },
     {
+      "name": "DNAnexus Integration",
+      "description": "Golden Helix server tasks for automating file uploads and downloads with DNAnexus",
+      "gitUrl": "https://github.com/goldenhelix/dnanexus-integration",
+      "tags": [
+        "Data Transfer",
+        "Platform Integration"
+      ]
+    },
+    {
       "name": "Azure Blob Storage Download",
       "description": "Bulk download and transfer capabilities for Azure Blob Storage",
       "gitUrl": "https://github.com/goldenhelix/azure-blob-download",
@@ -61,15 +70,6 @@
       "name": "Amazon S3 Download",
       "description": "Bulk download and transfer capabilities for Amazon S3",
       "gitUrl": "https://github.com/goldenhelix/s3-download",
-      "tags": [
-        "Data Transfer",
-        "Cloud Storage"
-      ]
-    },
-    {
-      "name": "DNAnexus Integration",
-      "description": "Golden Helix server tasks for automating file uploads and downloads with DNAnexus",
-      "gitUrl": "https://github.com/goldenhelix/dnanexus-integration",
       "tags": [
         "Data Transfer",
         "Cloud Storage"
