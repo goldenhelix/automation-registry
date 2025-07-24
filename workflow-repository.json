@@ -23,6 +23,14 @@
       ]
     },
     {
+      "name": "Secondary Analysis Utilities",
+      "description": "Tasks for working with secondary analysis results and quality metrics. Includes compress and index functionality for VCF, BAM, CRAM, BED, and FASTQ files",
+      "gitUrl": "https://github.com/goldenhelix/secondary-analysis-util",
+      "tags": [
+        "Secondary Analysis"
+      ]
+    },
+    {
       "name": "Cohort Allele Frequency",
       "description": "Cohort population frequencies tracks computation from VCFs using gautil",
       "gitUrl": "https://github.com/goldenhelix/cohort-analysis",
