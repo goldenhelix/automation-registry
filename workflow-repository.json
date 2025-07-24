@@ -82,6 +82,14 @@
         "Data Transfer",
         "Cloud Storage"
       ]
+    },
+    {
+      "name": "Legacy VarSeq Cohort Project",
+      "description": "Incrementally add small variants to a VarSeq project",
+      "gitUrl": "https://github.com/goldenhelix/legacy-vsproject",
+      "tags": [
+        "Cohort Analysis"
+      ]
     }
   ],
   "metadata": {
