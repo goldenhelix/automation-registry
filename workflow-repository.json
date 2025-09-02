@@ -14,11 +14,21 @@
     },
     {
       "name": "Sentieon Long Reads",
-      "description": "Sentieon long-read pipelines with BWA-MEM, DNAscope and TNScope",
+      "description": "Sentieon long-read pipelines with minimap2, DNAscope and TNScope",
       "gitUrl": "https://github.com/goldenhelix/sentieon-long-reads",
       "tags": [
         "Secondary Analysis",
         "Sentieon",
+        "Long Reads"
+      ]
+    },
+    {
+      "name": "PacBio HiFi WGS",
+      "description": "PacBio HiFi WGS pipeline based on the WDL workflow",
+      "gitUrl": "https://github.com/goldenhelix/pacbio-wdl",
+      "tags": [
+        "Secondary Analysis",
+        "PacBio",
         "Long Reads"
       ]
     },
