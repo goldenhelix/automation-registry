@@ -23,9 +23,29 @@
       ]
     },
     {
-      "name": "PacBio HiFi WGS",
-      "description": "PacBio HiFi WGS pipeline based on the WDL workflow",
+      "name": "PacBio Germline HiFi WGS",
+      "description": "PacBio HiFi germline WGS pipeline based on the WDL workflow",
       "gitUrl": "https://github.com/goldenhelix/pacbio-wdl",
+      "tags": [
+        "Secondary Analysis",
+        "PacBio",
+        "Long Reads"
+      ]
+    },
+    {
+      "name": "PacBio Somatic WGS",
+      "description": "PacBio HiFi somatic WGS pipeline based on the WDL workflow",
+      "gitUrl": "https://github.com/goldenhelix/pacbio-wdl-somatic",
+      "tags": [
+        "Secondary Analysis",
+        "PacBio",
+        "Long Reads"
+      ]
+    },
+    {
+      "name": "PacBio PureTarget Carrier Pipeline",
+      "description": "PTCP pipeline for analyzing PacBio PureTarget carrier screening data",
+      "gitUrl": "https://github.com/goldenhelix/pacbio-ptcp",
       "tags": [
         "Secondary Analysis",
         "PacBio",
