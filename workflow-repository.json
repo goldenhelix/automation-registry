@@ -43,7 +43,7 @@
       ]
     },
     {
-      "name": "PacBio PureTarget Carrier Pipeline",
+      "name": "PacBio PureTarget",
       "description": "PTCP pipeline for analyzing PacBio PureTarget carrier screening data",
       "gitUrl": "https://github.com/goldenhelix/pacbio-ptcp",
       "tags": [
