@@ -3,6 +3,14 @@
   "lastUpdated": "2025-05-08",
   "workflows": [
     {
+      "name": "VSPipeline",
+      "description": "Run VSPipeline to create projects and supporting tasks",
+      "gitUrl": "https://github.com/goldenhelix/run-vspipeline",
+      "tags": [
+        "Tierchiary Analysis"
+      ]
+    },
+    {
       "name": "Sentieon Short Reads",
       "description": "Sentieon short-read pipelines with BWA-MEM, DNAscope and TNScope",
       "gitUrl": "https://github.com/goldenhelix/sentieon-short-reads",
