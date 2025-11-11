@@ -11,22 +11,13 @@
       ]
     },
     {
-      "name": "Sentieon Short Reads",
-      "description": "Sentieon short-read pipelines with BWA-MEM, DNAscope and TNScope",
-      "gitUrl": "https://github.com/goldenhelix/sentieon-short-reads",
+      "name": "Sentieon Secondary Analysis",
+      "description": "Sentieon pipelines for both short-read (BWA-MEM) and long-read (minimap2) workflows with DNAscope and TNScope",
+      "gitUrl": "https://github.com/goldenhelix/sentieon-secondary-analysis",
       "tags": [
         "Secondary Analysis",
         "Sentieon",
-        "Short Reads"
-      ]
-    },
-    {
-      "name": "Sentieon Long Reads",
-      "description": "Sentieon long-read pipelines with minimap2, DNAscope and TNScope",
-      "gitUrl": "https://github.com/goldenhelix/sentieon-long-reads",
-      "tags": [
-        "Secondary Analysis",
-        "Sentieon",
+        "Short Reads",
         "Long Reads"
       ]
     },
