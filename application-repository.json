@@ -4,12 +4,30 @@
     "workflows": [
       {
         "name": "IGV",
-        "version": "2.16.0",
+        "version": "2.19.7",
         "description": "A high-performance, interactive tool for visual exploration of genomic data, supporting integration of various data types from local or cloud sources",
         "applicationYamlUrl": "applications/IGV.application.yaml",
         "iconUrl": "images/igv.png",
         "websiteUrl": "https://igv.org/doc/desktop/",
         "tags": ["Visualization", "BAM", "VCF"]
+      },
+      {
+        "name": "IGV3",
+        "version": "3.0.0-beta.1",
+        "description": "Version 3 of the IGV browser. A high-performance, interactive tool for visual exploration of genomic data, supporting integration of various data types from local or cloud sources",
+        "applicationYamlUrl": "applications/IGV3.application.yaml",
+        "iconUrl": "images/igv.png",
+        "websiteUrl": "https://igv.org/doc/desktop/#ReleaseNotes/3.0.x/",
+        "tags": ["Visualization", "BAM", "VCF"]
+      },
+      {
+        "name": "VarSeq+IGV",
+        "version": "3.0.1",
+        "description": "VarSeq bundled with IGV for variant annotation, filtering, interpretation and visual exploration of genomic data",
+        "applicationYamlUrl": "applications/VarSeqAndIGV.application.yaml",
+        "iconUrl": "images/varseq-igv.png",
+        "websiteUrl": "https://www.goldenhelix.com/platform/varseq",
+        "tags": ["VarSeq", "Visualization", "VCF", "BAM"]
       },
       {
         "name": "OnlyOffice",
