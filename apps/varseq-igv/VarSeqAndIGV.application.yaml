@@ -1,0 +1,66 @@
+name: VarSeqAndIGV
+description: Import VCFs, annotate, filter interpret
+icon_path: images/varseq-igv.png
+auto_generate_session_for_account: '{user}'
+
+agent_requirements:
+  name: Small
+  scheduler_cpu_cost: 1
+  cpu_cores: 4
+  memory_gb: 8
+  description: Opening existing projects or working with small projects
+
+alternative_agent_requirements:
+  Medium:
+    scheduler_cpu_cost: 1
+    cpu_cores: 8
+    memory_gb: 16
+    description: Creating projects and opening projects with many samples
+  Large:
+    scheduler_cpu_cost: 2
+    cpu_cores: 16
+    memory_gb: 32
+    description: Creating projects that involve genomes or CNVs
+  Extra Large:
+    scheduler_cpu_cost: 2
+    cpu_cores: 32
+    memory_gb: 64
+    description: Creating projects with large numbers of variants and samples
+
+parameters:
+  - name: project_file
+    label: Project File
+    type: file
+    optional: true
+    pattern_match:
+      - '*.vsproject'
+
+  - name: IDLE_TIMEOUT
+    label: Inactivity Timeout (auto-close)
+    help: When no mouse or keyboard interaction is detected for the selected period, VarSeq automatically saves all open projects and then closes to free resources.
+    type: enum
+    value: '14400'
+    optional: true
+    choices:
+      - '<1800>: Auto-close after 30 min of no user input'
+      - '<3600>: Auto-close after 1 hour of no user input'
+      - '<7200>: Auto-close after 2 hours of no user input'
+      - '<14400>: Auto-close after 4 hours of no user input'
+      - '<28800>: Auto-close after 8 hours of no user input'
+      - '<86400>: Auto-close after 24 hours of no user input'
+      - '<864000>: Auto-close after 10 days of no user input'
+      - '<>: Never auto-close'
+
+application:
+  docker:
+    image: ${VARSEQ_IGV_DOCKER_IMAGE}
+    workspace_mount: /home/ghuser/Workspace
+    shared_memory_size: 1g
+  env:
+    VNC_PW: ${APPLICATION_PASSWORD}
+    NO_VNC_PORT: ${APPLICATION_PORT}
+    APP_ARGS: '"${project_file}"'
+    VS_MAXIMIZE: '1'
+    MONITOR_PROCESS: '1'
+    GH_WORDTOPDF_URL: '${GH_SERVER_URL}/api/WordToPDF'
+    GH_TEMPDIR: '/scratch'

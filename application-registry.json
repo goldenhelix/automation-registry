@@ -35,19 +35,29 @@
       "name": "VarSeq+IGV",
       "version": "3.0.1",
       "description": "VarSeq bundled with IGV for variant annotation, filtering, interpretation and visual exploration of genomic data",
-      "applicationYamlUrl": "applications/VarSeqAndIGV.application.yaml",
-      "iconUrl": "images/varseq-igv.png",
+      "applicationYamlUrl": "apps/varseq-igv/VarSeqAndIGV.application.yaml",
+      "iconUrl": "apps/varseq-igv/varseq-igv.png",
       "websiteUrl": "https://www.goldenhelix.com/platform/varseq",
-      "tags": ["VarSeq", "Visualization", "VCF", "BAM"]
+      "tags": ["VarSeq", "Visualization", "VCF", "BAM"],
+      "imageVar": "VARSEQ_IGV_DOCKER_IMAGE",
+      "imageRepository": "registry.goldenhelix.com/public/ghdesktop-varseq-igv",
+      "versions": [
+        { "label": "3.0.1", "tag": "3.0.1", "default": true }
+      ]
     },
     {
       "name": "OnlyOffice",
       "version": "8.3.3",
       "description": "A free, open-source office suite offering comprehensive tools for creating, editing, and collaborating on documents, spreadsheets, presentations, forms, and PDFs",
-      "applicationYamlUrl": "applications/OnlyOffice.application.yaml",
-      "iconUrl": "images/onlyoffice.svg",
+      "applicationYamlUrl": "apps/onlyoffice/OnlyOffice.application.yaml",
+      "iconUrl": "apps/onlyoffice/onlyoffice.svg",
       "websiteUrl": "https://www.onlyoffice.com/",
-      "tags": ["Office Suite", "DOCX", "PDF"]
+      "tags": ["Office Suite", "DOCX", "PDF"],
+      "imageVar": "ONLYOFFICE_DOCKER_IMAGE",
+      "imageRepository": "registry.goldenhelix.com/public/ghdesktop-onlyoffice",
+      "versions": [
+        { "label": "8.3.3", "tag": "8.3.3", "default": true }
+      ]
     }
   ],
   "metadata": {
