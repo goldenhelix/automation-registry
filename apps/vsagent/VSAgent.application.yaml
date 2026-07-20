@@ -1,0 +1,40 @@
+name: VSAgent
+description: Agentic coding workspace
+icon_path: images/vsagent.svg
+
+# Mint an authenticated session for the launching user and inject it as
+# GH_SESSION_KEY, inherited by every terminal and agent so gautil/ghclient/
+# pygautil operate against the warehouse as that user with no setup.
+auto_generate_session_for_account: '{user}'
+
+# VSAgent has no idle-timeout mechanism (orca doesn't report activity to the
+# scheduler), so it is not auto-closed. Resources are set to zero: orca's own
+# footprint is minimal, so reserving nothing lets it run on the main host
+# without consuming scheduler capacity.
+agent_requirements:
+  name: Default
+  scheduler_cpu_cost: 0
+  cpu_cores: 0
+  memory_gb: 0
+  description: Runs on the main host and reserves no scheduler resources
+
+parameters:
+  - name: project_folder
+    label: Project Folder
+    help: A workspace folder to open as a project when VSAgent starts.
+    type: directory
+    optional: true
+
+application:
+  docker:
+    image: ${VSAGENT_DOCKER_IMAGE}
+    workspace_mount: /home/ghuser/Workspace
+    shared_memory_size: 1g
+  env:
+    VSAGENT_PORT: ${APPLICATION_PORT}
+    PROJECT_FOLDER: '${project_folder}'
+    # Behind the workspace's authenticating proxy — users land paired without a
+    # tokenized URL. Set to 0 to require the pairing token instead.
+    VSAGENT_SERVE_OPEN_PAIRING: '1'
+  command: /opt/vsagent/run-vsagent.sh
+  args: []

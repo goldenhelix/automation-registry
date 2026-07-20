@@ -1,0 +1,58 @@
+{
+  "manifestVersion": "2.0",
+  "lastUpdated": "2026-07-20",
+  "workflows": [
+    {
+      "name": "IGV",
+      "version": "2.19.7",
+      "description": "A high-performance, interactive tool for visual exploration of genomic data, supporting integration of various data types from local or cloud sources",
+      "applicationYamlUrl": "apps/igv/IGV.application.yaml",
+      "iconUrl": "apps/igv/igv.png",
+      "websiteUrl": "https://igv.org/doc/desktop/",
+      "tags": ["Visualization", "BAM", "VCF"],
+      "imageVar": "IGV_DOCKER_IMAGE",
+      "versions": [
+        { "label": "2.19.7", "tag": "2.19.7", "image": "registry.goldenhelix.com/public/ghdesktop-igv:2.19.7", "default": true },
+        { "label": "3.0.0-beta.1", "tag": "3.0.0-beta.1", "image": "registry.goldenhelix.com/public/ghdesktop-igv3:3.0.0-beta.1" }
+      ]
+    },
+    {
+      "name": "VSAgent",
+      "version": "v0.6.3",
+      "description": "Agentic coding workspace",
+      "applicationYamlUrl": "apps/vsagent/VSAgent.application.yaml",
+      "iconUrl": "apps/vsagent/vsagent.svg",
+      "websiteUrl": "https://www.goldenhelix.com",
+      "tags": ["development", "agents"],
+      "imageVar": "VSAGENT_DOCKER_IMAGE",
+      "imageRepository": "registry.goldenhelix.com/public/vsagent",
+      "versions": [
+        { "label": "v0.6.3 (latest)", "tag": "v0.6.3", "default": true },
+        { "label": "v0.6.2", "tag": "v0.6.2" }
+      ]
+    },
+    {
+      "name": "VarSeq+IGV",
+      "version": "3.0.1",
+      "description": "VarSeq bundled with IGV for variant annotation, filtering, interpretation and visual exploration of genomic data",
+      "applicationYamlUrl": "applications/VarSeqAndIGV.application.yaml",
+      "iconUrl": "images/varseq-igv.png",
+      "websiteUrl": "https://www.goldenhelix.com/platform/varseq",
+      "tags": ["VarSeq", "Visualization", "VCF", "BAM"]
+    },
+    {
+      "name": "OnlyOffice",
+      "version": "8.3.3",
+      "description": "A free, open-source office suite offering comprehensive tools for creating, editing, and collaborating on documents, spreadsheets, presentations, forms, and PDFs",
+      "applicationYamlUrl": "applications/OnlyOffice.application.yaml",
+      "iconUrl": "images/onlyoffice.svg",
+      "websiteUrl": "https://www.onlyoffice.com/",
+      "tags": ["Office Suite", "DOCX", "PDF"]
+    }
+  ],
+  "metadata": {
+    "repository": "Application Registry",
+    "organization": "Golden Helix",
+    "contact": "support@goldenhelix.com"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "manifestVersion": "1.0",
+  "lastUpdated": "2026-07-20",
+  "plugins": [
+    {
+      "name": "VSClinical Cancer KB",
+      "version": "3.1.0-DEV3",
+      "description": "VSClinical Cancer Knowledge Base",
+      "pluginYamlUrl": "plugins/vsclinical-cancerkb/vsclinical-cancerkb.plugin.yaml",
+      "tags": ["VSClinical", "Cancer", "Knowledge Base"],
+      "imageVar": "CANCERKB_DOCKER_IMAGE",
+      "imageRepository": "registry.goldenhelix.com/public/cancerkb",
+      "minServerVersion": "3.1.0",
+      "versions": [
+        { "label": "3.1.0-DEV3", "tag": "3.1.0-DEV3", "default": true }
+      ]
+    }
+  ],
+  "metadata": {
+    "repository": "Plugin Registry",
+    "organization": "Golden Helix",
+    "contact": "support@goldenhelix.com"
+  }
+}

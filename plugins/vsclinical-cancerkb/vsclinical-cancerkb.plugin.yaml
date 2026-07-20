@@ -1,0 +1,28 @@
+name: VSClinical Cancer KB
+description: VSClinical Cancer Knowledge Base
+icon_name: book
+auto_generate_session_for_account: "{workspaceBot}"
+starting_url: /site/webkb.html
+retry_count: 3
+retry_delay: 60
+agent_requirements:
+  name: Small
+  scheduler_cpu_cost: 1
+  cpu_cores: 4
+  memory_gb: 8
+  description: Opening existing projects or working with small projects
+parameters:
+  - name: drug_catalog
+    label: The Drug catalog
+    type: catalog
+    value: DrugInterpretations
+  - name: interpretation_catalog
+    label: The Interpretation Catalog
+    type: catalog
+    value: CancerInterpretation
+plugin:
+  port: 30303
+  docker:
+    image: ${CANCERKB_DOCKER_IMAGE}
+    shared_memory_size: 1g
+  env: {}
