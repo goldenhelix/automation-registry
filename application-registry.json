@@ -4,7 +4,6 @@
   "workflows": [
     {
       "name": "IGV",
-      "version": "2.19.7",
       "description": "A high-performance, interactive tool for visual exploration of genomic data, supporting integration of various data types from local or cloud sources",
       "applicationYamlUrl": "apps/igv/IGV.application.yaml",
       "iconUrl": "apps/igv/igv.png",
@@ -18,7 +17,6 @@
     },
     {
       "name": "VSAgent",
-      "version": "v0.6.3",
       "description": "Agentic coding workspace",
       "applicationYamlUrl": "apps/vsagent/VSAgent.application.yaml",
       "iconUrl": "apps/vsagent/vsagent.svg",
@@ -27,13 +25,12 @@
       "imageVar": "VSAGENT_DOCKER_IMAGE",
       "imageRepository": "registry.goldenhelix.com/public/vsagent",
       "versions": [
-        { "label": "v0.6.3 (latest)", "tag": "v0.6.3", "default": true },
-        { "label": "v0.6.2", "tag": "v0.6.2" }
+        { "label": "v0.6.7 (latest)", "tag": "v0.6.7", "default": true },
+        { "label": "v0.6.3", "tag": "v0.6.3" }
       ]
     },
     {
       "name": "VarSeq+IGV",
-      "version": "3.0.1",
       "description": "VarSeq bundled with IGV for variant annotation, filtering, interpretation and visual exploration of genomic data",
       "applicationYamlUrl": "apps/varseq-igv/VarSeqAndIGV.application.yaml",
       "iconUrl": "apps/varseq-igv/varseq-igv.png",
@@ -47,7 +44,6 @@
     },
     {
       "name": "OnlyOffice",
-      "version": "8.3.3",
       "description": "A free, open-source office suite offering comprehensive tools for creating, editing, and collaborating on documents, spreadsheets, presentations, forms, and PDFs",
       "applicationYamlUrl": "apps/onlyoffice/OnlyOffice.application.yaml",
       "iconUrl": "apps/onlyoffice/onlyoffice.svg",

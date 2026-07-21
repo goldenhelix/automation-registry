@@ -4,7 +4,6 @@
   "plugins": [
     {
       "name": "VSClinical Cancer KB",
-      "version": "3.1.0-DEV3",
       "description": "VSClinical Cancer Knowledge Base",
       "pluginYamlUrl": "plugins/vsclinical-cancerkb/vsclinical-cancerkb.plugin.yaml",
       "tags": ["VSClinical", "Cancer", "Knowledge Base"],
