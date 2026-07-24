@@ -7,6 +7,12 @@ icon_path: images/vsagent.svg
 # pygautil operate against the warehouse as that user with no setup.
 auto_generate_session_for_account: '{user}'
 
+# Mint a scoped, revocable OpenAI-compatible AI key for the launching user when
+# workspace AI is enabled, and inject GH_AI_BASE_URL / GH_AI_API_KEY /
+# GH_AI_DEFAULT_MODEL / GH_AI_MODELS so agents (e.g. OpenCode) use the
+# workspace-defined model with no setup. Revoked when the app closes.
+auto_generate_ai_key_for_account: '{user}'
+
 # VSAgent has no idle-timeout mechanism (orca doesn't report activity to the
 # scheduler), so it is not auto-closed. Resources are set to zero: orca's own
 # footprint is minimal, so reserving nothing lets it run on the main host
