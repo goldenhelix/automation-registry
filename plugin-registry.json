@@ -1,6 +1,6 @@
 {
   "manifestVersion": "1.0",
-  "lastUpdated": "2026-07-20",
+  "lastUpdated": "2026-07-30",
   "plugins": [
     {
       "name": "VSClinical Cancer KB",
@@ -11,7 +11,7 @@
       "imageRepository": "registry.goldenhelix.com/public/cancerkb",
       "minServerVersion": "3.1.0",
       "versions": [
-        { "label": "3.1.0-DEV3", "tag": "3.1.0-DEV3", "default": true }
+        { "label": "2026-07-30 (latest)", "tag": "2026-07-30", "default": true }
       ]
     }
   ],
