@@ -18,9 +18,9 @@
       "baseUrl": "https://api.openai.com/v1",
       "minServerVersion": "3.1.0",
       "models": [
-        { "id": "gpt-5.6-terra", "name": "GPT-5.6 Terra", "default": true },
-        { "id": "gpt-5.6-sol", "name": "GPT-5.6 Sol" },
-        { "id": "gpt-5.6-luna", "name": "GPT-5.6 Luna" }
+        { "id": "gpt-5.6-luna", "name": "GPT-5.6 Luna", "default": true },
+        { "id": "gpt-5.6-terra", "name": "GPT-5.6 Terra" },
+        { "id": "gpt-5.6-sol", "name": "GPT-5.6 Sol" }
       ]
     }
   ],
