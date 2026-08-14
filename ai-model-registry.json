@@ -1,26 +1,59 @@
 {
   "manifestVersion": "1.0",
-  "lastUpdated": "2026-08-11",
+  "lastUpdated": "2026-08-14",
   "providers": [
     {
       "kind": "anthropic",
       "name": "Anthropic",
-      "minServerVersion": "3.1.0",
       "models": [
-        { "id": "claude-sonnet-5", "name": "Claude Sonnet 5", "default": true },
-        { "id": "claude-opus-5", "name": "Claude Opus 5" },
-        { "id": "claude-fable-5", "name": "Claude Fable 5" }
+        {
+          "id": "claude-sonnet-5",
+          "name": "Claude Sonnet 5",
+          "default": true
+        },
+        {
+          "id": "claude-opus-5",
+          "name": "Claude Opus 5"
+        },
+        {
+          "id": "claude-fable-5",
+          "name": "Claude Fable 5"
+        }
+      ]
+    },
+    {
+      "kind": "google",
+      "name": "Google Gemini",
+      "models": [
+        {
+          "id": "gemini-3.7-flash",
+          "name": "Gemini 3.7 Flash",
+          "default": true
+        },
+        {
+          "id": "gemini-3.1-pro-preview",
+          "name": "Gemini 3.1 Pro Preview"
+        }
       ]
     },
     {
       "kind": "openai",
       "name": "OpenAI",
       "baseUrl": "https://api.openai.com/v1",
-      "minServerVersion": "3.1.0",
       "models": [
-        { "id": "gpt-5.6-luna", "name": "GPT-5.6 Luna", "default": true },
-        { "id": "gpt-5.6-terra", "name": "GPT-5.6 Terra" },
-        { "id": "gpt-5.6-sol", "name": "GPT-5.6 Sol" }
+        {
+          "id": "gpt-5.6-luna",
+          "name": "GPT-5.6 Luna",
+          "default": true
+        },
+        {
+          "id": "gpt-5.6-terra",
+          "name": "GPT-5.6 Terra"
+        },
+        {
+          "id": "gpt-5.6-sol",
+          "name": "GPT-5.6 Sol"
+        }
       ]
     }
   ],
