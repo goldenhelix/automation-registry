@@ -24,6 +24,27 @@ agent_requirements:
   memory_gb: 0
   description: Runs on the main host and reserves no scheduler resources
 
+# Seed the shared agent context into the workspace's Automation area when an
+# admin adds or updates VSAgent. Install steps run in the checkout task as that
+# admin with Automation mounted read-write, which a non-admin launch never has,
+# so this is the one place the clone succeeds for every later user. Runs on
+# every update too, hence clone-or-fast-forward.
+install:
+  - name: seed_agent_context
+    description: Clone or fast-forward the shared agent context repo into Automation
+    command: bash
+    args:
+      - |-
+        set -euo pipefail
+        ctx="$WORKSPACE_DIR/Automation/gh-agent-context"
+        if [ -d "$ctx/.git" ]; then
+          echo "Updating shared agent context in $ctx"
+          git -C "$ctx" pull --ff-only -q
+        else
+          echo "Cloning shared agent context into $ctx"
+          git clone --depth 1 -q https://github.com/goldenhelix/gh-agent-context "$ctx"
+        fi
+
 parameters:
   - name: project_folder
     label: Project Folder
