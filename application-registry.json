@@ -1,6 +1,6 @@
 {
   "manifestVersion": "2.0",
-  "lastUpdated": "2026-09-17",
+  "lastUpdated": "2026-09-24",
   "workflows": [
     {
       "name": "IGV",
@@ -25,7 +25,8 @@
       "imageVar": "VSAGENT_DOCKER_IMAGE",
       "imageRepository": "registry.goldenhelix.com/public/vsagent",
       "versions": [
-        { "label": "v0.7.1 (latest)", "tag": "v0.7.1", "default": true },
+        { "label": "v0.7.2 (latest)", "tag": "v0.7.2", "default": true },
+        { "label": "v0.7.1", "tag": "v0.7.1" },
         { "label": "v0.7.0", "tag": "v0.7.0" },
         { "label": "v0.6.10", "tag": "v0.6.10" },
         { "label": "v0.6.9", "tag": "v0.6.9" }
